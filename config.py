@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
 import os
 
 # How many seconds to wait for the proxy to make a connection.
 # The higher this number, the longer the check will take
 # and the more proxies you will receive.
-TIMEOUT = 6
+TIMEOUT = 5
 
 # Maximum concurrent connections.
 # Don't set higher than 900, please.
@@ -37,6 +36,8 @@ HTTP_SOURCES = (
     "https://proxyspace.pro/https.txt",
     "https://raw.githubusercontent.com/almroot/proxylist/master/list.txt",
     "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/HTTP.txt",
+    "https://raw.githubusercontent.com/BlackSnowDot/proxylist-update-every-minute/main/http.txt",   
+    "https://raw.githubusercontent.com/BlackSnowDot/proxylist-update-every-minute/main/https.txt",
     "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
     "https://raw.githubusercontent.com/hendrikbgr/Free-Proxy-Repo/master/proxy_list.txt",
     "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt",
@@ -44,6 +45,7 @@ HTTP_SOURCES = (
     "https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt",
     "https://raw.githubusercontent.com/mmpx12/proxy-list/master/http.txt",
     "https://raw.githubusercontent.com/mmpx12/proxy-list/master/https.txt",
+    "https://raw.githubusercontent.com/Nimble-Shrestha/http-proxy-list/main/proxy-list/data.txt",
     "https://raw.githubusercontent.com/proxy4parsing/proxy-list/main/http.txt",
     "https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt",
     "https://raw.githubusercontent.com/RX4096/proxy-list/main/online/http.txt",
@@ -90,6 +92,7 @@ SOCKS5_SOURCES = (
     "https://openproxylist.xyz/socks5.txt",
     "https://proxyspace.pro/socks5.txt",
     "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS5.txt",
+    "https://raw.githubusercontent.com/BlackSnowDot/proxylist-update-every-minute/main/socks.txt",
     "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
     "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt",
     "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt",
