@@ -49,4 +49,17 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ secrets.BRANCH }}  
+          branch: ${{ secrets.BRANCH }}
+          
+      - name: Txt Combiner
+        run: |
+          Invoke-Webrequest https://raw.githubusercontent.com/Nimble-Shrestha/proxy-list/master/proxies/socks4.txt -OutFile socks4.txt
+          Invoke-Webrequest https://raw.githubusercontent.com/Nimble-Shrestha/proxy-list/master/proxies/socks5.txt -OutFile socks5.txt
+          Invoke-Webrequest https://raw.githubusercontent.com/Nimble-Shrestha/proxy-list/master/proxies/http.txt -OutFile http.txt
+          gc http.txt,socks4.txt,socks5.txt > Proxy.txt
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Proxy Scraper Bot"
+          git add -A
+          git commit -m "Update Proxies (`Proxy.txt`)" -a
+          git branch -u origin/master
+          
