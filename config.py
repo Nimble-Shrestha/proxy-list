@@ -62,6 +62,8 @@ HTTP_SOURCES = (
     "https://www.proxy-list.download/api/v1/get?type=http",
     "https://www.proxy-list.download/api/v1/get?type=https",
     "https://www.proxyscan.io/download?type=http",
+    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
+    
     os.getenv('PROXY11_URL'),
 )
 SOCKS4 = True
