@@ -109,6 +109,6 @@ SOCKS5_SOURCES = (
 )
 
 VALIDATION_TARGETS = [
-    "https://gogoanime.lu",
+    "https://gogoanime.vc",
     "https://zoro.to"
 ]
